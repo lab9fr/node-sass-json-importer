@@ -74,7 +74,7 @@ export function parseValue(value, opts = {}) {
   } else if (value === '') {
     return '""'; // Return explicitly an empty string (Sass would otherwise throw an error as the variable is set to nothing)
   } else {
-    return value;
+    return `${value}`;
   }
 }
 
